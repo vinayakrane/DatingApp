@@ -5,7 +5,6 @@ using API.Data;
 using API.Entity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
 namespace API.Controllers
 {
     [ApiController]
@@ -22,6 +21,7 @@ namespace API.Controllers
         public async Task<ActionResult<IEnumerable<AppUser>>> GetUsers()
         {
             //using (DataContext db = new DataContext(null))
+
             //{
                 //var users = db.Users.ToList();
                 return await _context.Users.ToListAsync();

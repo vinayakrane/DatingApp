@@ -17,7 +17,7 @@ namespace API.Data.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "5.0.1");
 
-            modelBuilder.Entity("API.Entity.AppUser", b =>
+            modelBuilder.Entity("API.Entities.AppUser", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
